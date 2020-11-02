@@ -47,7 +47,7 @@ Tillykke! I har nu lavet jeres første SSL-server. Gem nu jeres projekt som en <
 
 
 ## Optional
-1. Implementere det i jeres banking applikation.
+Implementere det i jeres banking applikation 😊
 
 
 
