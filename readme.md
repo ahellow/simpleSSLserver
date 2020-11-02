@@ -23,7 +23,7 @@ Nu skal i lave jeres SSL-server. Lav en constant der hedder sslServer som i sæt
 Til sidst skal i sætte jeres sslServer til at lytte på en port, ligesom vi gør med alle andre servere. For standardisering bedes i vælge port `3443`
 
 ## Step 7
-Nu skal vi generere jeres private key. Først lav et bibliotek hvori vi skal have jeres private key og certifikat. Dette kan gøres ved at skrive `mkdir <folder name>` i jeres terminal. Diriger derefter om til denne folder og skriv `openssl genrsa -out key.pem` i terminalen. Hvis alt går som det skal, burde i nu have en private key .pem fil i jeres mappe. "genrsa" betyder vi genererer en private key baseret på RSA algoritmen og "-out key.pem" er blot hvad outputtet skal hedde.
+Nu skal vi generere jeres private key. Først lav en mappe hvori vi skal have jeres private key og certifikat. Dette kan gøres ved at skrive `mkdir <folder name>` i jeres terminal. Diriger derefter om til denne folder og skriv `openssl genrsa -out key.pem` i terminalen. Hvis alt går som det skal, burde i nu have en private key .pem fil i jeres mappe. "genrsa" betyder vi genererer en private key baseret på RSA algoritmen og "-out key.pem" er blot hvad outputtet skal hedde.
   
 ## Step 8
 Nu skal vi lave en certificate signing request. Det vil sige vi skal bede en autoritet om at verificerer os med en digital identitet. Hvis I kan huske fra undervisningen, er det normalt en third-party autoritet der verificerer sådan en request, men i dag bruger vi blot os selv som autoritet. Det er vigtigt at huske at man under professionelle forhold ikke vil få noget ud af at registerere sig hos sig selv!
