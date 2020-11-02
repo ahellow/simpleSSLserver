@@ -1,0 +1,23 @@
+{
+  "name": "simpleSSLserver",
+  "version": "1.0.0",
+  "description": "I dag skal vi lave en simpel express-server om til en https-server, altså implementere SSL i en applikation.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DIS-2020/simpleSSLserver.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DIS-2020/simpleSSLserver/issues"
+  },
+  "homepage": "https://github.com/DIS-2020/simpleSSLserver#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
