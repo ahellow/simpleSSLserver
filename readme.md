@@ -14,7 +14,7 @@ Skriv derefter `npm init -y` og installér express med `npm install express --sa
 Vi skal bruge nogle modules for at lave en SSL-server. I skal derfor require 'express', 'https', 'path' og 'fs' og gemme dem i en constant.
 
 ## Step 4
-Som ved en normal express-applikation skal vi have defineret vores rute. Skriv derfor `app.use('/', (req, res) => {<\En eller anden respons til serveren>})`.
+Som ved en normal express-applikation skal vi have defineret vores rute. Skriv derfor `app.use('/', (req, res) => {<En eller anden respons til serveren>})`.
 
 ## Step 5
 Nu skal i lave jeres SSL-server. Lav en constant der hedder sslServer som i sætter til at være `= https.createServer({}, app)`. Den skal indeholde 2 properties; "key" og "cert", som kommer til at være vores private key og certifikatet. Vi starter med at sætte dem som tomme.
@@ -39,7 +39,7 @@ Nu skal vi generere jeres certifikat. Skriv `openssl x509 -req -days 365 -in csr
 Vend nu tilbage til jeres app.js. I de to properties I lavede tidligere, skal vi nu indsætte vores private key og vores certifikat. Dette gøres ved at skrive `fs.readFileSync(path.join(__dirname, 'cert', 'key.pem'))` i jeres key-property og `fs.readFileSync(path.join(__dirname, 'cert', 'cert.pem'))` i jeres cert-property. Dette fortæller blot jeres program hvorfra den skal læse jeres private key og certifikat. 
 
 ## Step 11
-I burde nu kunne start serveren og går ind på jeres side i browseren. Hvis I lægger mærke til det, vil I ikke få nogen forbindelse ved localhost:<\jeres port> fordi det vil antage en normal http-forbindelse. I skal derimod skrive https://localhost:<\jeres port> for at oprette en SSL-forbindelse.
+I burde nu kunne start serveren og går ind på jeres side i browseren. Hvis I lægger mærke til det, vil I ikke få nogen forbindelse ved localhost:<jeres port> fordi det vil antage en normal http-forbindelse. I skal derimod skrive https://localhost:<jeres port> for at oprette en SSL-forbindelse.
   
 Det er muligt at jeres browser ikke vil tillade dette, da den har nogle trusted authorities den kun tillader. Hvis I har chrome, kan i åbne en ny fane og skrive chrome://flags og derefter søge på "Allow invalid certificates for resources loaded from localhost" og trykke enable. Dette vil kræve en genstart af jeres browser.
 
