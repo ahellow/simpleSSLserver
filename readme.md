@@ -46,7 +46,7 @@ Det er muligt at jeres browser ikke vil tillade dette, da den har nogle trusted 
 Tillykke! I har nu lavet jeres første SSL-server. Gem nu jeres projekt som en <jeres_navn>.zip fil, og aflever. Vær sikker på at i kører serveren på port `3443` da det vil gøre det lettere for os at køre.
 
 
-## Optional
+## Aflevering
 Implementere det i jeres banking applikation 😊
 
 
