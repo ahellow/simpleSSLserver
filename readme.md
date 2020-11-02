@@ -43,11 +43,12 @@ I burde nu kunne start serveren og går ind på jeres side i browseren. Hvis I l
   
 Det er muligt at jeres browser ikke vil tillade dette, da den har nogle trusted authorities den kun tillader. Hvis I har chrome, kan i åbne en ny fane og skrive chrome://flags og derefter søge på "Allow invalid certificates for resources loaded from localhost" og trykke enable. Dette vil kræve en genstart af jeres browser.
 
-Tillykke! I har nu lavet jeres første SSL-server. Gem nu jeres projekt som en <jeres_navn>.zip fil, og aflever. Vær sikker på at i kører serveren på port `3443` da det vil gøre det lettere for os at køre.
+Tillykke! I har nu lavet jeres første SSL-server. 
 
 
 ## Aflevering
-Implementere det i jeres banking applikation 😊
+1. Implementere det i jeres banking applikation.
+2. Gem jeres projekt som en <jeres_navn>.zip fil, og aflever. Vær sikker på at i kører serveren på port `3443` da det vil gøre det lettere for os at køre.
 
 
 
